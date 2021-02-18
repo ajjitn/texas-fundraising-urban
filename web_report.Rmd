@@ -6,6 +6,7 @@ output:
   html_document:
     number_sections: FALSE
     self_contained: TRUE
+    toc: TRUE
     toc_float: TRUE
     css: !expr here::here("www", "web_report.css")
     editor_options:
