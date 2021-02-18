@@ -1,0 +1,99 @@
+---
+title: ""
+author: ""
+date: "`r format(Sys.time(), '%B %d, %Y %H:%M')`"
+output:
+  html_document:
+    number_sections: FALSE
+    self_contained: TRUE
+    toc_float: TRUE
+    css: !expr here::here("www", "web_report.css")
+    editor_options:
+      chunk_output_type: console
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+</style>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" />
+
+
+
+```{r rmarkdown-setup, echo = FALSE}
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+```{r setup}
+options(scipen = 999)
+
+library(tidyverse)
+library(sf)
+library(mapview)
+library(googlesheets4)
+library(janitor)
+library(urbnthemes)
+
+set_urbn_defaults(base_size = 13)
+```
+
+
+```{r}
+gs4_deauth()
+
+
+funds_df = read_sheet("https://docs.google.com/spreadsheets/d/1rboROHhryc_x7PPCwfJo6LjEkfDIAuXlmP8IHsc0CKM/edit?usp=sharing") %>% 
+  arrange(desc(Total)) %>% 
+  # Only keep centers with some funds donated
+  filter(Total > 0)
+
+
+
+```
+
+
+
+
+# Background
+
+Urban employees are working across centers to raise money for mutual aid organizations working in Texas that have been affected by the recent winter storms ....
+
+
+# Center Totals
+#### Last updated `r format(Sys.time(), '%B %d, %Y %H:%M')`
+
+
+```{r}
+first_place_center = funds_df %>% slice(1) %>% pull(Center)
+ 
+title_with_first_place = paste0(first_place_center, " is in first place!")
+
+funds_df %>% 
+  mutate(Center = fct_reorder(Center, Total, .desc = FALSE)) %>% 
+  ggplot(aes(y = Center, x = Total)) +
+  geom_col() +
+  geom_text(aes(label = scales::dollar(Total)), hjust = -0.2, size = 5, color = palette_urbn_cyan[6]) +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x=element_blank(),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  scale_x_continuous(expand = expansion(add = c(0, 190))) +
+  labs(y = "", title= title_with_first_place)
+```
+
+
+# Where is the money going?
+
+We are aiming to donate the money to a collection of mutual aid organizations in Texas. So far these include:
+
+ - Org 1
+ - Org 2
+ 
+ 
+# How to donate?
+
+
