@@ -4,11 +4,11 @@
 
 /* make titles blue */
 h1 {
-  color: #af1f6b;
+  color: #e54096;
 }
 
 .navbar {
-  background-color: #af1f6b;
+  background-color: #e54096;
   color: #ffffff;
   font-weight: bold;
 }
@@ -34,7 +34,7 @@ li{
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color: #af1f6b;
+  color: #e54096;
   background-color: #FFFFFF;
   font-size: 50px;
 }
@@ -56,8 +56,8 @@ li{
 
 /* Legend Formatting */
 .list-group-item.active {
-  background-color: #af1f6b;
-  border-color: #af1f6b;
+  background-color: #e54096;
+  border-color: #e54096;
 }
 
 .list-group-item.active:hover {
