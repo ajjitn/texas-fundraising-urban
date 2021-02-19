@@ -125,25 +125,27 @@ You can donate in two ways:
 2) You can also directly donate to any organization supporting people who are in need during the climate crisis and send the receipt to your Center's point person (See table below)/ Make sure to include “Mutual aid -- [Your Center/Office]”  in the email subject line, so your contribution can be included in your center’s count! Extra fun if your emailed receipts include a description of the organization or person conducting the support. 
 
 
+If your center/office is not listed, please consider representing your center/office. Reach out to jjagannath@urban.org and storresrod@urban.org if you can volunteer, and we will get you plugged in!
+
 
 ### Center Point People 
 
 ```{r}
 contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
-                      "JPC", "Jahnavi J, Lauren F, Melanie L", "", "Jahnavi-Jagannath", "",
-                      "MET", "Sonia T, Abby W, Peace G", "", "Peace-Gwam", "paypal.me/peacegwam",
-                      "LHP", "Kate Thomas", "", "katethomas81", "kateathom@gmail.com",
-                      "LAB", "Megan Randall", "", "Megan-Randall-1", "MRandall149",
-                      "TPC", "Nikhita Airi", "", "Nikhita-Airi", "paypal.me/nikhitaairi",
-                      "IBP", "Danielle Kwon", "", "DanielleKwon", "paypal.me/daniellekwon95",
-                      "CNP", "Nora, Claire", "", "Nora_Hakizimana", "paypal.me/NoraHakizimana",
-                      "HPC", "Clara Alvarez", "", "Clara-AlvarezCaraveo", "",
-                      "COMM", "Katie Robertson", "", "Katie-Robertson-8", "paypal.me/KatieRobertson24",
+                      "JPC", "Jahnavi Jagganath, Lauren Farrell, Melanie Langness", "jjagannath@urban.org", "Jahnavi-Jagannath", "",
+                      "MET", "Sonia Torres, Abby Williams, Peace Guam", "pgwam@urban.org", "Peace-Gwam", "paypal.me/peacegwam",
+                      "LHP", "Kate Thomas", "kthomas@urban.org", "katethomas81", "kateathom@gmail.com",
+                      "LAB", "Megan Randall", "mrandall@urban.org", "Megan-Randall-1", "MRandall149",
+                      "TPC", "Nikhita Airi", "nairi@urban.org", "Nikhita-Airi", "paypal.me/nikhitaairi",
+                      "IBP", "Danielle Kwon", "dkwon@urban.org", "DanielleKwon", "paypal.me/daniellekwon95",
+                      "CNP", "Nora, Claire", "nhakizimana@urban.org", "Nora_Hakizimana", "paypal.me/NoraHakizimana",
+                      "HPC", "Clara Alvarez", "calvarezcaraveo@urban.org", "Clara-AlvarezCaraveo", "",
+                      "COMM", "Katie Robertson", "KRobertson@urban.org ", "Katie-Robertson-8", "paypal.me/KatieRobertson24",
                       "TECH", "Ajjit Narayanan", "anarayanan@urban.org","Ajjit-Narayanan", "",
-                      "HFPC", "Caitlin Y , JP","", "Cait_Young", "",
-                      "EDP", "Mitch R, Macy R","","mitchell-rybak", "",
-                      "DEV", "Ben F, Emily M", "", "Emily-Munguia-3", "",
-                      "EXEC", "Matt Rogers", "", "mrogers716", "mrogers716@gmail.com")
+                      "HFPC", "Cait Young, JP Walsh","cyoung@urban.org", "Cait_Young", "",
+                      "EDP", "Mitch Rybak, Macy Ranier","Mrainer@urban.org or mrybak@urban.org","mitchell-rybak", "",
+                      "DEV", "Ben Falk, Emily Munguia", "emunguia@urban.org", "Emily-Munguia-3", "",
+                      "EXEC", "Matt Rogers", "mrogers@urban.org", "mrogers716", "mrogers716@gmail.com")
 
 contact_df <- contact_df %>% 
   arrange((Center)) %>%
@@ -152,7 +154,7 @@ contact_df <- contact_df %>%
 contact_df %>% 
   gt() %>% 
   tab_options(
-    table.width = pct(90),
+    table.width = pct(100),
     table.align = "left",
     row.striping.background_color = palette_urbn_gray[2]
   ) %>% 
