@@ -130,8 +130,8 @@ You can donate in two ways:
 
 ```{r}
 contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
-                      "JPC", "Jahnavi J, Lauren, Melanie L", "", "Jahnavi-Jagannath", "",
-                      "MET", "Sonia T, Abby, Peace G", "", "Peace-Gwam", "paypal.me/peacegwam",
+                      "JPC", "Jahnavi J, Lauren F, Melanie L", "", "Jahnavi-Jagannath", "",
+                      "MET", "Sonia T, Abby W, Peace G", "", "Peace-Gwam", "paypal.me/peacegwam",
                       "LHP", "Kate Thomas", "", "katethomas81", "kateathom@gmail.com",
                       "LAB", "Megan Randall", "", "Megan-Randall-1", "MRandall149",
                       "TPC", "Nikhita Airi", "", "Nikhita-Airi", "paypal.me/nikhitaairi",
@@ -140,7 +140,7 @@ contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
                       "HPC", "Clara Alvarez", "", "Clara-AlvarezCaraveo", "",
                       "COMM", "Katie Robertson", "", "Katie-Robertson-8", "paypal.me/KatieRobertson24",
                       "TECH", "Ajjit Narayanan", "anarayanan@urban.org","Ajjit-Narayanan", "",
-                      "HFPC", "Caitlyn, JP","", "Cait_Young", "",
+                      "HFPC", "Caitlin Y , JP","", "Cait_Young", "",
                       "EDP", "Mitch R, Macy R","","mitchell-rybak", "",
                       "DEV", "Ben F, Emily M", "", "Emily-Munguia-3", "",
                       "EXEC", "Matt Rogers", "", "mrogers716", "mrogers716@gmail.com")
@@ -153,17 +153,21 @@ contact_df %>%
   gt() %>% 
   tab_options(
     table.width = pct(90),
-    table.align = "left"
+    table.align = "left",
+    row.striping.background_color = palette_urbn_gray[2]
   ) %>% 
     # Style header font
-  gt::tab_style(
+  tab_style(
     style = list(
-      cell_text( weight = "bold")
+      cell_text( weight = "bold"),
+      cell_fill(color = palette_urbn_magenta[2])
     ),
     locations = list(
       cells_column_labels(gt::everything())
     )
-  )
+  ) %>% 
+  opt_row_striping()
+
 
 ```
 
