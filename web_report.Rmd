@@ -60,7 +60,16 @@ funds_df = read_sheet("https://docs.google.com/spreadsheets/d/1rboROHhryc_x7PPCw
 
 # Background
 
-Urban employees are working across centers to raise money for mutual aid organizations working in Texas that have been affected by the recent winter storms ....
+Texans are currently suffering a winter storm of deadly proportions. Thus far, [37 people](https://www.nbcnews.com/news/us-news/texas-contending-water-nightmare-top-power-crisis-n1258208) have died from weather-related fatalities, [4 million](https://www.nbcnews.com/news/weather/knocked-out-texas-millions-face-record-lows-without-power-new-n1257964) people have lost power, [12 million](https://www.nbcnews.com/news/us-news/texas-contending-water-nightmare-top-power-crisis-n1258208) people have had their water disrupted, and [300 people](https://www.houstonchronicle.com/news/houston-texas/health/article/Memorial-Hermann-sees-60-carbon-monoxide-15954216.php) have been hospitalized for carbon monoxide poisoning. This climate crisis and its deadly impacts have been largely driven by a failure of Texas’s centralized power grid, a willful neglect of new investment in energy infrastructure, denials of the science of climate change, and the exacerbation of existing structural inequities for BIPOC (Black, Indigenous, People of Color) individuals and families of low income. 
+<br>
+<br>
+
+**We are excited to announce an informal Urban-wide mutual aid donation campaign for Texans affected by the winter storm of 2021.** The campaign will be an optional, virtual, and anonymous collection open to all Urban staff from various centers and offices to donate what they can from their own personal funds. We will be recording and tracking all of our donations on this website, so check back for updates. 
+
+We have chosen to direct all proceeds raised from this campaign to mutual aid groups in Texas, because they have been one of the most flexible and fastest ways for [immediate needs](https://itsgoingdown.org/autonomous-mutual-aid-groups-mobilize-in-texas-as-death-toll-rises) to be met during the winter storm. For example, when there was no coordinated plan to assist house-less people prepare for the dropping temperatures, [mutual aid groups were the first](https://www.kxan.com/news/local/austin/helping-the-homeless-austin-volunteers-pay-for-hotel-rooms-deliver-food) to pay for their hotel rooms, drive to shelters, and pay for food. We will evenly split our raised funds between a select list of mutual aid organizations, chosen via group consensus and the input of our staff familiar with Texas.
+
+This campaign will begin on Monday, February 22nd, and close on February 26th. [You can read a more about the background of the crisis, the conditions that led to it, and a bit of background of mutual aid organizations here](https://docs.google.com/document/d/1omQhlCRj8k25Tu9EHne2Dez7XpStEq_3uxwnmZTkwUE/edit?usp=sharing). 
+
 
 
 # Center Totals
@@ -91,10 +100,22 @@ funds_df %>%
 
 We are aiming to donate the money to a collection of mutual aid organizations in Texas. So far these include:
 
- - Org 1
- - Org 2
+- Austin: Austin Mutual Aid, Stop the Sweeps Austin, Free Lunch Austin
+- Corpus Christi: Corpus Christi Mutual Aid
+- Dallas: Feed the People Dallas, Dallas Stops Evictions, Lucha Dallas
+- Houston: Houseless Organizing Coalition, Crowdsource Rescue, Say Her Name Texas
+- Rio Grande Valley: Rio Grande Valley Mutual Aid
+- San Antonio: Black Futures Collective, Para Mi Gente Mutual Aid 
+- Immigrant specific: LaUnidad11
+
+In the event we need to add or change organizations (sometimes organizations reach funding capacity and request that funds be sent elsewhere) we will reference public resources, such as the ones listed below: 
+
+- TX Mutual Aid Directory 
+- Texas Weather Crisis Resource Doc
+- Twitter List 
  
  
 # How to donate?
 
+If you are interested in donating, please reference the email you received from your center’s point-person, which includes the instructions for how to donate. 
 
