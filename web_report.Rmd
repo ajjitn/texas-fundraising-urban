@@ -86,13 +86,13 @@ funds_df %>%
   mutate(Center = fct_reorder(Center, Total, .desc = FALSE)) %>% 
   ggplot(aes(y = Center, x = Total)) +
   geom_col() +
-  geom_text(aes(label = scales::dollar(Total)), hjust = -0.2, size = 5, color = palette_urbn_cyan[6]) +
+  geom_text(aes(label = scales::dollar(Total, accuracy= 1)), hjust = -0.2, size = 5, color = palette_urbn_cyan[6]) +
   theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
         axis.line.x=element_blank(),
         panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  scale_x_continuous(expand = expansion(add = c(0, 190))) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
   labs(y = "", title= title_with_first_place)
 ```
 
