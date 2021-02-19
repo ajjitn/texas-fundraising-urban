@@ -2,7 +2,7 @@
   font-family: Lato;
 }
 
-/* make titles blue */
+/* make titles magenta */
 h1 {
   color: #e54096;
 }
@@ -61,8 +61,13 @@ li{
 }
 
 .list-group-item.active:hover {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #e54096;
+  border-color: #e54096;
+}
+
+.list-group-item:hover {
+  background-color: #f5cbdf;
+  border-color: #f5cbdf;
 }
 
 .tocify {
