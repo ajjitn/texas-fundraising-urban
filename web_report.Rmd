@@ -47,7 +47,7 @@ set_urbn_defaults(base_size = 13)
 gs4_deauth()
 
 
-funds_df = read_sheet("https://docs.google.com/spreadsheets/d/1rboROHhryc_x7PPCwfJo6LjEkfDIAuXlmP8IHsc0CKM/edit?usp=sharing") %>% 
+funds_df = read_sheet("1rboROHhryc_x7PPCwfJo6LjEkfDIAuXlmP8IHsc0CKM") %>% 
   arrange(desc(Total)) %>% 
   # Only keep centers with some funds donated
   filter(Total > 0)
@@ -77,7 +77,7 @@ This campaign will begin on Friday, February 19th, and close on February 26th. [
 #### Last updated `r format(Sys.time(), '%B %d, %Y %H:%M')`
 
 
-```{r}
+```{r, fig.height = 7}
 first_place_center = funds_df %>% slice(1) %>% pull(Center)
  
 title_with_first_place = paste0(first_place_center, " is in first place!")
