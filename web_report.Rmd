@@ -144,7 +144,7 @@ contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
                       "TECH", "Ajjit Narayanan", "anarayanan@urban.org","Ajjit-Narayanan", "",
                       "HFPC", "Cait Young, JP Walsh","cyoung@urban.org", "Cait_Young", "",
                       "EDP", "Mitch Rybak, Macy Ranier","Mrainer@urban.org or mrybak@urban.org","mitchell-rybak", "",
-                      "DEV", "Ben Falk, Emily Munguia", "emunguia@urban.org", "Emily-Munguia-3", "",
+                      "DEV", "Emily Munguia", "emunguia@urban.org", "Emily-Munguia-3", "",
                       "EXEC", "Matt Rogers", "mrogers@urban.org", "mrogers716", "mrogers716@gmail.com")
 
 contact_df <- contact_df %>% 
