@@ -10,16 +10,8 @@ jobs:
     name: Render Rmarkdown file
     runs-on: ubuntu-latest
     container: rocker/verse
-    env:
-      GH_PAT: ${{ secrets.GITHUBTOKEN }}
     steps:
-      - uses: actions/checkout@v1
-        with:
-          token: ${{ secrets.GITHUBTOKEN }}
-      
-      - name: Print GH TOKEN
-        run: echo $GH_PAT
-      
+    
       - name: Install packages
         run: |
           install.packages('remotes')
@@ -32,8 +24,18 @@ jobs:
 
       - name: Render rmarkdown
         run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
-      
-      - uses: EndBug/add-and-commit@v7.0.0
+        
+        
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          author_name: Ajjit Narayanan
-          author_email: ajjit123@gmail.com
+          path: master
+        
+      - name: Push commits
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Render Rmd (GH Actions)"
+          git push
+      
