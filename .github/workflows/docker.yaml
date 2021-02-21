@@ -22,9 +22,14 @@ jobs:
           remotes::install_github("UrbanInstitute/urbnthemes")
         shell: Rscript {0}
 
+      - name: Print wd
+        run: Rscript -e 'getwd()'
+       
+      - name: List files
+        run: Rscript -e 'list.files()'
+        
       - name: Render rmarkdown
         run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
-        
         
       - name: Checkout
         uses: actions/checkout@v2
