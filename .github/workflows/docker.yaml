@@ -12,6 +12,10 @@ jobs:
     container: rocker/verse
     steps:
     
+      - name: Checkout 
+        uses: actions/checkout@v2    
+      
+      
       - name: Install packages
         run: |
           install.packages('remotes')
