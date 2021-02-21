@@ -10,8 +10,12 @@ jobs:
     name: Render Rmarkdown file
     runs-on: ubuntu-latest
     container: rocker/verse
+    env:
+      GH_PAT: ${{ secrets.GITHUBTOKEN }}
     steps:
       - uses: actions/checkout@v1
+        with:
+          token: ${{ secrets.GITHUBTOKEN }}
       
       - name: Install packages
         run: |
