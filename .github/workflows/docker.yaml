@@ -24,7 +24,13 @@ jobs:
 
       - name: Print wd
         run: Rscript -e 'getwd()'
-       
+        
+      - name: go back one dir
+        run: cd ../
+
+      - name: Print wd again
+        run: Rscript -e 'getwd()'
+        
       - name: List files
         run: Rscript -e 'list.files()'
         
