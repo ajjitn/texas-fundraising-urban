@@ -28,11 +28,8 @@ jobs:
       - name: Render rmarkdown
         run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
       
-      - name: Commit results
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git checkout master
-          git add .
-          git commit -m 'Re-build Rmarkdown files' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+      - uses: EndBug/add-and-commit@v7.0.0
+        with:
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          
