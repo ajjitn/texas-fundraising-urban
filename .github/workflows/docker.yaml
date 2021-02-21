@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     container: rocker/verse
     steps:
+      - name: Print wd1
+        run: Rscript -e 'getwd()'
     
       - name: Install packages
         run: |
@@ -22,17 +24,17 @@ jobs:
           remotes::install_github("UrbanInstitute/urbnthemes")
         shell: Rscript {0}
 
-      - name: Print wd
+      - name: Print wd2
         run: Rscript -e 'getwd()'
         
       - name: go back one dir
         run: cd ../
 
-      - name: Print wd again
+      - name: Print wd3
         run: Rscript -e 'getwd()'
         
-      - name: List files
-        run: Rscript -e 'list.files()'
+      - name: List files of folder
+        run: Rscript -e 'list.files("/__w/texas-fundraising-urban/")'
         
       # - name: Render rmarkdown
       #   run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
