@@ -31,3 +31,6 @@ jobs:
         run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
       
       - uses: EndBug/add-and-commit@v7.0.0
+        with:
+          author_name: Ajjit Narayanan
+          author_email: ajjit123@gmail.com
