@@ -32,8 +32,6 @@ knitr::opts_chunk$set(echo = FALSE)
 options(scipen = 999)
 
 library(tidyverse)
-library(sf)
-library(mapview)
 library(googlesheets4)
 library(janitor)
 library(urbnthemes)
@@ -183,5 +181,5 @@ The Texas Jail Project is asking people to donate funds to the commissary accoun
 
 I am forwarding a note from our friends at the Texas Jail Project, who are in need of some critical support getting money into folks’ commissary accounts. As you’re all probably aware, Texas is freezing over and people have been without power, food, and heat for days now. As we know in these kinds of crises, conditions inside jails and prisons are that much more unlivable. Commissary helps people get edible food, clean water, warmer clothes, and meet other immediate needs. The Texas Connect network system via which funds are sent only allows up to three commissary payments per day per person, so as many hands on deck who can help distribute funds, the better! **TX Jail Project will fully reimburse via PayPal or Venmo once they get through survival mode this week**.
 
-More specific directions in this [spreadsheet](https://docs.google.com/spreadsheets/d/1KMgVY6_MEygcT0OrwibYoocye7dS9oi_XSyrWg4dTXI/edit?usp=sharing), and please forward to any of your friends, family, members, partners etc. who can afford to send some cash without immediate reimbursement at this time.
+More specific directions in this [spreadsheet](https://docs.google.com/spreadsheets/d/1KMgVY6_MEygcT0OrwibYoocye7dS9oi_XSyrWg4dTXI/edit?usp=sharing), and please forward to any of your friends, family, members, partners etc. who can afford to send some cash without immediate reimbursement at this time..
 

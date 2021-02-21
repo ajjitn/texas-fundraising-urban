@@ -11,6 +11,16 @@ jobs:
     container: rocker/verse
     steps:
       - uses: actions/checkout@v1
+      
+      - name: Install packages
+        run: |
+        install.packages("remotes")
+        remotes::install_cran("here")
+        remotes::install_cran("googlesheets4")
+        remotes::install_cran("janitor")
+        remotes::install_cran("gt")
+        remotes::install_github("UrbanInstitute/urbnthemes")
+        shell: Rscript {0}
       - run: Rscript -e 'rmarkdown::render("web_report.Rmd")'
       - name: Upload results
         uses: actions/upload-artifact@main
