@@ -17,6 +17,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUBTOKEN }}
       
+      - name: Print GH TOKEN
+        run: echo $GH_PAT
+      
       - name: Install packages
         run: |
           install.packages('remotes')
