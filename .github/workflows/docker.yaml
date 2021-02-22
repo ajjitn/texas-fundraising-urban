@@ -1,10 +1,16 @@
 on:
+  schedule:
+  - cron: "0 */8 * * *"
   push:
     branches:
       - master
+    paths:
+      - '**.Rmd'
   pull_request:
     branches:
       - main
+    paths:
+      - '**.Rmd'
 jobs:
   render:
     name: Render Rmarkdown file
