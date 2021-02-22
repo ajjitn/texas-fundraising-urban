@@ -79,7 +79,7 @@ funds_df = read_sheet("1rboROHhryc_x7PPCwfJo6LjEkfDIAuXlmP8IHsc0CKM") %>%
   arrange(desc(Total)) %>% 
   # Only keep centers with some funds donated
   filter(Total > 0) %>% 
-  tidylog::left_join(center_count_df, by = "Center") %>% 
+  left_join(center_count_df, by = "Center") %>% 
   mutate(dollars_per_person = Total / count)
 
 
