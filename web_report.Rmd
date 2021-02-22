@@ -105,7 +105,7 @@ This campaign will begin on Friday, February 19th, and close on February 26th. [
 
 
 # Fundraising Totals
-#### Last updated `r format(Sys.time(), '%B %d, %Y %H:%M')`
+#### Last updated - `r format(Sys.time() %>% .POSIXct("EST"), '%b %d, %I:%M %p')`
 
 ```{r}
 goal_amount = 10000
@@ -224,7 +224,7 @@ If your center/office is not listed, please consider representing your center/of
 
 ```{r}
 contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
-                      "JPC", "Jahnavi Jagganath, Lauren Farrell, Melanie Langness", "jjagannath@urban.org", "Jahnavi-Jagannath", "",
+                      "JPC", "Jahnavi Jagannath, Lauren Farrell, Melanie Langness", "jjagannath@urban.org", "Jahnavi-Jagannath", "",
                       "MET", "Sonia Torres, Abby Williams, Peace Guam", "pgwam@urban.org", "Peace-Gwam", "paypal.me/peacegwam",
                       "LHP", "Kate Thomas", "kthomas@urban.org", "katethomas81", "kateathom@gmail.com",
                       "LAB", "Megan Randall", "mrandall@urban.org", "Megan-Randall-1", "MRandall149",
