@@ -224,7 +224,7 @@ If your center/office is not listed, please consider representing your center/of
 
 ```{r}
 contact_df <- tribble(~Center, ~Names, ~Email, ~Venmo, ~Paypal,
-                      "JPC", "Jahnavi Jagannath, Lauren Farrell, Melanie Langness", "jjagannath@urban.org", "Jahnavi-Jagannath", "",
+                      "JPC", "Jahnavi Jagannath, Lauren Farrell, Melanie Langness", "jjagannath@urban.org", "Jahnavi-Jagannath", "paypal.me/langness316",
                       "MET", "Sonia Torres, Abby Williams, Peace Guam", "pgwam@urban.org", "Peace-Gwam", "paypal.me/peacegwam",
                       "LHP", "Kate Thomas", "kthomas@urban.org", "katethomas81", "kateathom@gmail.com",
                       "LAB", "Megan Randall", "mrandall@urban.org", "Megan-Randall-1", "MRandall149",
