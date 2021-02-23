@@ -58,7 +58,7 @@ center_count_df = tibble::tribble(
      "FIN",   8L,
      "FOS",   7L,
      "GCO",  14L,
-     "HFP",  24L,
+     "HFPC",  24L,
      "HPC",  81L,
       "HR",  18L,
      "IBP",  70L,
@@ -108,7 +108,7 @@ This campaign will begin on Friday, February 19th, and close on February 26th. [
 #### Last updated - `r format(Sys.time() %>% .POSIXct("EST"), '%b %d, %I:%M %p')`
 
 ```{r}
-goal_amount = 10000
+goal_amount = 20000
 
 total_raised_chr = paste0(scales::dollar(total_raised, accuracy = 1), "\n Raised!")
 goal_amount_chr = scales::dollar(goal_amount, accuracy = 1)
