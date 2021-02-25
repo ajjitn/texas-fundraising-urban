@@ -58,7 +58,7 @@ center_count_df = tibble::tribble(
      "FIN",   8L,
      "FOS",   7L,
      "GCO",  14L,
-     "HFPC",  24L,
+     "HFPC",  16L,
      "HPC",  81L,
       "HR",  18L,
      "IBP",  70L,
