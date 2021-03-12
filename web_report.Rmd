@@ -266,26 +266,18 @@ contact_df %>%
 ```
 
 
-# Where is the money going?
+# Where we distributed the money?
 
-We plan on evenly splitting our raised funds between the following mutual aid organizations, chosen via group consensus and the input of our staff familiar with Texas. Because the situation is rapidly evolving on the ground, and because mutual aid organizations are often limited in capacity (and may request to redirect funds), this list will not be finalized until sometime closer to the end of the competition: 
+Together, Urban was able to raise \$20,662, including Venmo and paypal donations, and receipts from folks who donated directly. The total of $14,846.90 (all of the donations collected via Venmo and Paypal) were distributed to 6 organizations from March 1st to 6th.The 6 organizations received were chosen because they had donations open, have a documented history of effective mutual aid distribution, have campaigns related to winter storm relief, are focused on supporting BIPOC individuals, and have a policy angle (focus on housing, policing, or racial inequity).
 
-- Austin: [Austin Mutual Aid](https://linktr.ee/austinmutualaid), [Stop the Sweeps Austin](https://twitter.com/stopsweepsatx?lang=en), [Free Lunch Austin](https://freelunchatx.com/)
-- Corpus Christi: [Corpus Christi Mutual Aid](https://www.facebook.com/CCMutualAid/)
-- Dallas: [Feed the People Dallas](https://feedthepeopledallas.com/), [Dallas Stops Evictions](https://linktr.ee/DallasStopsEvictions), [Lucha Dallas](https://www.instagram.com/luchadallas/?hl=en)
-- Houston: [Houseless Organizing Coalition](https://linktr.ee/htx.hoc), [Crowdsource Rescue](https://crowdsourcerescue.com/), [Say Her Name Texas](https://www.sayhernametexas.org/)
-- Rio Grande Valley: [Rio Grande Valley Mutual Aid](https://twitter.com/rgvmutualaid?lang=en)
-- San Antonio: [Black Futures Collective](https://www.instagram.com/blackfuturescollective/?hl=en), [Para Mi Gente Mutual Aid](https://www.instagram.com/para.mi_gente/?hl=en) 
-- Immigrant specific: [LaUnidad11](https://donorbox.org/launidad11covidresponse)
-- Jail and Commissary Account Support: [Texas Jail Project](https://www.texasjailproject.org/donate/)
+- [Corpus Christi Mutual Aid](https://www.facebook.com/CCMutualAid/) (Corpus Christi)
+- [Feed the People Dallas](https://feedthepeopledallas.com/) (Dallas)
+- [Say Her Name Texas](https://www.sayhernametexas.org/) (Houston)
+- [Black Futures Collective](https://twitter.com/BlackFuturesSA) (San Antonio)
+- [Texas Jail Project](https://www.texasjailproject.org/about-us/) (Texas-wde)
+- [MS Rising Coalition](https://www.msrising.com/) (Mississippi-wide)
 
-
-In the event we need to add or change organizations (sometimes organizations reach funding capacity and request that funds be sent elsewhere) we will reference public resources, such as the ones listed below: 
-
-- [TX Mutual Aid Directory](https://docs.google.com/document/d/1rdMnbzYxfXFrG1DefGqN3R1zu_lan2fml2bEYRpMcRQ/edit) 
-- [Texas Weather Crisis Resource Doc](https://docs.google.com/document/d/11GplfTTLRv6yV-2AC6GFw5Gy4izlPdGSay1HdRQcRjQ/edit)
-- [Twitter List](https://twitter.com/priyankasma/status/1362474585917120516?s=20) 
- 
+So far, these organizations have provided water, shelter, immediate relief, and support to people in both Texas and Mississippi. One group shared that our funds arrived just in time for them to do life-affirming work: “First off, thank you. We really appreciate it, and we’re so shook right now, thank you for supporting our work.”
 
 
 # More ways to help
