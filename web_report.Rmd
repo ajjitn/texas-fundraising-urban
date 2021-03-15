@@ -207,6 +207,22 @@ funds_df %>%
   labs(y = "", title=)
 ```
 
+
+# Where we distributed the money
+
+Together, Urban was able to raise \$20,662, including Venmo and paypal donations, and receipts from folks who donated directly. The total of $14,846.90 (all of the donations collected via Venmo and Paypal) were distributed to 6 organizations from March 1st to 6th.The 6 organizations received were chosen because they had donations open, have a documented history of effective mutual aid distribution, have campaigns related to winter storm relief, are focused on supporting BIPOC individuals, and have a policy angle (focus on housing, policing, or racial inequity).
+
+- [Corpus Christi Mutual Aid](https://www.facebook.com/CCMutualAid/) (Corpus Christi)
+- [Feed the People Dallas](https://feedthepeopledallas.com/) (Dallas)
+- [Say Her Name Texas](https://www.sayhernametexas.org/) (Houston)
+- [Black Futures Collective](https://twitter.com/BlackFuturesSA) (San Antonio)
+- [Texas Jail Project](https://www.texasjailproject.org/about-us/) (Texas-wde)
+- [MS Rising Coalition](https://www.msrising.com/) (Mississippi-wide)
+
+So far, these organizations have provided water, shelter, immediate relief, and support to people in both Texas and Mississippi. One group shared that our funds arrived just in time for them to do life-affirming work: “First off, thank you. We really appreciate it, and we’re so shook right now, thank you for supporting our work.”
+
+
+
  
 # How to donate?
 
@@ -264,20 +280,6 @@ contact_df %>%
 
 
 ```
-
-
-# Where we distributed the money?
-
-Together, Urban was able to raise \$20,662, including Venmo and paypal donations, and receipts from folks who donated directly. The total of $14,846.90 (all of the donations collected via Venmo and Paypal) were distributed to 6 organizations from March 1st to 6th.The 6 organizations received were chosen because they had donations open, have a documented history of effective mutual aid distribution, have campaigns related to winter storm relief, are focused on supporting BIPOC individuals, and have a policy angle (focus on housing, policing, or racial inequity).
-
-- [Corpus Christi Mutual Aid](https://www.facebook.com/CCMutualAid/) (Corpus Christi)
-- [Feed the People Dallas](https://feedthepeopledallas.com/) (Dallas)
-- [Say Her Name Texas](https://www.sayhernametexas.org/) (Houston)
-- [Black Futures Collective](https://twitter.com/BlackFuturesSA) (San Antonio)
-- [Texas Jail Project](https://www.texasjailproject.org/about-us/) (Texas-wde)
-- [MS Rising Coalition](https://www.msrising.com/) (Mississippi-wide)
-
-So far, these organizations have provided water, shelter, immediate relief, and support to people in both Texas and Mississippi. One group shared that our funds arrived just in time for them to do life-affirming work: “First off, thank you. We really appreciate it, and we’re so shook right now, thank you for supporting our work.”
 
 
 # More ways to help
